@@ -14,3 +14,5 @@ ENV TZ="Europe/London"
 RUN cp /usr/share/zoneinfo/Europe/London /etc/localtime
 
 ENTRYPOINT ["/host_opt/backup/startup.sh"]
+
+CMD ["crond", "-f" ]
