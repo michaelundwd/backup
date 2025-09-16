@@ -7,7 +7,7 @@
 
 FROM alpine:latest
 
-RUN mkdir /host_opt /homeserver_backup_homepi
+RUN mkdir /host_opt
 
 RUN apk add --no-cache tzdata
 ENV TZ="Europe/London"
